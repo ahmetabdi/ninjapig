@@ -1,0 +1,18 @@
+<% @movies.in_groups_of(6) do |movie_group| %>
+  <div class="row">
+    <% movie_group.each do |movie| %>
+      <div class="small-2 columns">
+        <% if movie %>
+          <%= link_to movie_path(movie) do %>
+            <div class="image">
+              <%= image_tag movie.main_image %>
+              <div class="imdb"><span class="fi-star"></span> <%= movie.rating %></div>
+              <div class="views"><span class="fi-eye"></span> 0</div>
+            </div>
+            <p><h5><%= movie.title %><h5></p>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+<% end %>

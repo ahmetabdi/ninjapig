@@ -1,0 +1,133 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+ *= foundation-icons
+ */
+
+html {
+  font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+.row {
+  max-width: 500rem;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.71428571;
+  color: #eee;
+  background-color: #1f1f1f;
+}
+
+.sidebar {
+  display: block;
+  padding: 4px 10px 4px 25px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.sidebar span {
+  margin-right: 10px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: middle;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar a {
+  color: hsla(0,0%,100%,.7);
+}
+
+.sidebar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 13px;
+  color: #fff;
+  text-overflow: ellipsis;
+}
+
+.off-canvas {
+  height: 100% !important;
+  background-color: rgba(0,0,0,.15) !important;
+}
+
+.off-canvas-content {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.image {
+  height: auto;
+  max-height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  margin-bottom: 5px;
+  -moz-border-radius: 0.6em;
+  -webkit-border-radius: 0.6em;
+}
+
+.image .imdb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2px 5px;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.image .imdb span {
+  font-size: 15px;
+  color: #FFCB00;
+}
+
+.image .views {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2px 5px;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.image .views span {
+  font-size: 15px;
+  color: lightblue;
+}
