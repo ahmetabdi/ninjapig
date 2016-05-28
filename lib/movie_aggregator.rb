@@ -21,6 +21,6 @@ class MovieAggregator
   private
 
   def json_file_paths
-    Dir[File.expand_path('./node-salts/db/', File.dirname(__FILE__)) + '/*.json']
+    Dir.glob("#{Rails.root}/lib/node-salts/db/*.json")
   end
 end
