@@ -6,6 +6,8 @@ class MovieAggregator
   end
 
   def run
+    puts "running..."
+    puts json_file_paths
     json_file_paths.each do |file_path|
       file = File.read(file_path)
       data = JSON.parse(file)
