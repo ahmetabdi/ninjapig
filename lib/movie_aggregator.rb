@@ -1,5 +1,3 @@
-require "http"
-
 class MovieAggregator
   def self.run
     new.run
