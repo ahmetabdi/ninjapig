@@ -1,0 +1,3 @@
+[submodule "lib/node-salts"]
+	path = lib/node-salts
+	url = git@github.com:ahmetabdi/node-salts.git
